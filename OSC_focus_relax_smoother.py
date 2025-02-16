@@ -7,7 +7,7 @@ from pythonosc import dispatcher
 from pythonosc import osc_server
 
 # Network Variables
-ip = "10.37.169.76"  # Update this with your MacBook's actual IP
+ip = "########"  # Update this with your MacBook's actual IP
 port = 5000
 
 # Muse Variables
