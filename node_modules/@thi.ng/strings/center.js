@@ -1,0 +1,15 @@
+import { memoizeO } from "@thi.ng/memoize/memoizeo";
+import { repeat } from "./repeat.js";
+import { truncate } from "./truncate.js";
+const center = memoizeO((n, pad = " ") => {
+  const buf = repeat(String(pad), n);
+  return (x) => {
+    if (x == null) return buf;
+    x = x.toString();
+    const r = (n - x.length) / 2;
+    return x.length < n ? buf.substring(0, r) + x + buf.substring(0, r + ((n & 1) === (x.length & 1) ? 0 : 1)) : truncate(n)(x);
+  };
+});
+export {
+  center
+};

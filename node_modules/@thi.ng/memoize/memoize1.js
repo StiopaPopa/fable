@@ -1,0 +1,12 @@
+const memoize1 = (fn, cache = /* @__PURE__ */ new Map()) => (x) => {
+  let res;
+  return cache.has(x) ? cache.get(x) : (cache.set(x, res = fn(x)), res);
+};
+const memoizeAsync1 = (fn, cache = /* @__PURE__ */ new Map()) => async (x) => {
+  let res;
+  return cache.has(x) ? cache.get(x) : (cache.set(x, res = await fn(x)), res);
+};
+export {
+  memoize1,
+  memoizeAsync1
+};

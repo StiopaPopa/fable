@@ -1,0 +1,14 @@
+import { memoizeO } from "@thi.ng/memoize/memoizeo";
+import { repeat } from "./repeat.js";
+const padRight = memoizeO((n, ch = " ") => {
+  const buf = repeat(String(ch), n);
+  return (x, len) => {
+    if (x == null) return buf;
+    x = x.toString();
+    len = len !== void 0 ? len : x.length;
+    return len < n ? x + buf.substring(len) : x;
+  };
+});
+export {
+  padRight
+};
