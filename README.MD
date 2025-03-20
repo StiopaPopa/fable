@@ -18,5 +18,5 @@ We’re proud of creating a seamless, real-time storytelling platform that trans
 ## What we learned 📚
 Through developing Fable, we gained a deeper understanding of real-time data processing, from parsing EEG signals to synchronizing audio and video outputs. Integrating diverse tools like OpenAI, ElevenLabs, and Luma Labs taught us the value of modular design and clear communication between APIs. We also discovered how critical it is to balance technical complexity with user experience, ensuring that the shifting storyline remains both immersive and coherent.
 
-## What's next for Fable 🚀
+## What's next for Fable 🚀 
 We’re excited to broaden Fable’s capabilities by refining our EEG interpretation for an even wider range of emotions and deeper engagement tracking, exploring additional wearable sensors beyond the Muse headset, and advancing our storytelling techniques—potentially introducing multiple branching storylines, co-op experiences, and VR integration.
